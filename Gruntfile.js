@@ -26,9 +26,16 @@ module.exports = function(grunt) {
       },
       dist: {
         src: [
+          'bower_components/jquery/jquery.js',
           'js/main.js'
         ],
-        dest: 'dist/js/script.min.js'
+        dest: 'dist/js/scripts.min.js'
+      },
+      modernizr: {
+        src: [
+          'bower_components/modernizr/modernizr.js'
+        ],
+        dest: 'dist/js/vendor/modernizr.min.js'
       }
     },
     uglify: {

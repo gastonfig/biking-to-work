@@ -3,7 +3,5 @@
 
 /.sass-cache
 .DS_Store
-/Node_Server/node_modules/grunt
-/components
-/public/components
+/bower_components
 /node_modules
