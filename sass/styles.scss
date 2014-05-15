@@ -2,3 +2,60 @@
 @import "../bower_components/susy/sass/susy"; // Including susy manually so we can use the Bower version
 
 @import 'modules/_colors';
+
+
+/* LAYOUT
+----------------------------------------------- */
+body {
+	background: $bgColor;
+	color: $textColor;
+}
+
+$susy: (
+  columns: 12,
+  // column-width: 70px,
+  container: auto,
+  gutters: 1/4,
+  math: fluid,
+  output: float,
+  gutter-position: inside,
+  debug: (
+    image: show-columns,
+    color: rgba(#000, .25),
+    output: overlay,
+    toggle: top right,
+  ),
+);
+
+
+
+.container {
+	@include container;
+}
+
+.half {
+	@include span(6 wide of 12);
+
+	&:first-child {
+		border-right: 1px solid $lineColor;
+	}
+}
+
+.third {
+	@include span(4 wide of 12); 
+
+	&:first-child, &:nth-child(2) {
+		border-right: 1px solid $lineColor;
+	}
+}
+
+
+section {
+	text-align: center;
+}
+
+
+.row {
+	border-top: 1px solid $lineColor;
+	@include span(12 wide of 12 last);
+}
