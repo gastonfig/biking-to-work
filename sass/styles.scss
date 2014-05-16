@@ -2,6 +2,8 @@
 @import "../bower_components/susy/sass/susy"; // Including susy manually so we can use the Bower version
 
 @import 'modules/_colors';
+@import 'modules/_mixins';
+@import 'modules/_fonts';
 
 
 /* LAYOUT
@@ -13,7 +15,7 @@ body {
 
 $susy: (
   columns: 12,
-  // column-width: 70px,
+  column-width: 70px,
   container: auto,
   gutters: 1/4,
   math: fluid,
@@ -26,8 +28,6 @@ $susy: (
     toggle: top right,
   ),
 );
-
-
 
 .container {
 	@include container;
@@ -58,4 +58,48 @@ section {
 .row {
 	border-top: 1px solid $lineColor;
 	@include span(12 wide of 12 last);
+}
+
+/* HERO
+----------------------------------------------- */
+.head {
+	background: #fff;
+	display: inline-block;
+	width: 100%;
+}
+
+header {
+	h1, p {
+		color: $bgColor;
+	}
+}
+
+h1 {
+	@extend %secondaryFont;
+	@include type-size(9, 9.3);
+}
+
+/* STATS
+----------------------------------------------- */
+.label {
+	color: $dimText;
+	text-transform: uppercase;
+
+	@include type-size(1.6);
+}
+
+.value {
+	color: $accentColor;
+	font-weight: 700;
+	letter-spacing: -.03em;
+
+	@extend %secondaryFont;
+	@include type-size(12.8);
+
+	span {
+		font-weight: 400;
+		letter-spacing: 0;
+		
+		@include type-size(3.3);
+	}
 }
