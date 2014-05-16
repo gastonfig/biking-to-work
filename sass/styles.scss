@@ -64,7 +64,7 @@ section {
 /* HERO
 ----------------------------------------------- */
 .head {
-	background: #fff;
+	background: #fff url('/images/map-bg.png') no-repeat right 0;
 	display: inline-block;
 	width: 100%;
 }
@@ -73,11 +73,30 @@ header {
 	h1, p {
 		color: $bgColor;
 	}
+
+	p {
+		color: #353e42;
+		margin: 0;
+
+		@extend %serifFont;
+		@include type-size(1.4, 2.2);
+	}
+}
+
+.lead {
+	@include column-count(2);
+	@include span(9 wide of 12);
+	@include px-to-rem(margin-bottom, 9);
 }
 
 h1 {
-	@extend %secondaryFont;
-	@include type-size(9, 9.3);
+	font-weight: 900;
+	text-transform: uppercase;
+
+	@extend %primaryFont;
+	@include type-size(9, 7.1);
+	@include px-to-rem(padding-top, 6);
+	// @include px-to-rem(padding-top, 3);
 }
 
 /* STATS

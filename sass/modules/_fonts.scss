@@ -16,7 +16,7 @@ $primaryFont: "proxima-nova";
 
 
 /**
- * Proxima Nova Condensed
+ * Nimbus Sans Condensed
  * 
  * Regular: 400
  * Bold: 700
@@ -28,4 +28,13 @@ $secondaryFont: "nimbus-sans-condensed";
 
 %secondaryFont {
 	font-family: $secondaryFont, helvetica, arial, sans-serif;
+}
+
+/**
+ * Georgia
+ * 
+ */
+
+%serifFont {
+	font-family: georgia, serif;
 }
