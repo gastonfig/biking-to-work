@@ -52,7 +52,7 @@ $susy: (
 
 
 section {
-	text-align: center;
+	// text-align: center;
 }
 
 
@@ -103,18 +103,25 @@ h1 {
 ----------------------------------------------- */
 .label {
 	color: $dimText;
+	letter-spacing: .2em;
+	padding-left: 20px;
 	text-transform: uppercase;
 
+	@extend %primaryFont;
 	@include type-size(1.6);
+	@include px-to-rem(margin-top, 2.1);
 }
 
 .value {
 	color: $accentColor;
 	font-weight: 700;
 	letter-spacing: -.03em;
+	text-align: center;
 
 	@extend %secondaryFont;
 	@include type-size(12.8);
+	@include px-to-rem(margin-bottom, 9.6);
+	@include px-to-rem(margin-top, 7);
 
 	span {
 		font-weight: 400;
