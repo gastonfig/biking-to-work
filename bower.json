@@ -5,7 +5,8 @@
     "modernizr": "~2.6.2",
     "jquery": "~1.10.2",
     "susy": "~2.x",
-    "normalize.css": "~3.0.1"
+    "normalize.css": "~3.0.1",
+    "countUp.js": "~1.1.1"
   },
   "private": true
 }

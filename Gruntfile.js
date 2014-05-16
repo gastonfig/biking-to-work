@@ -28,6 +28,8 @@ module.exports = function(grunt) {
       dist: {
         src: [
           'bower_components/jquery/jquery.js',
+          'bower_components/countUp.js/countUp.js',
+          'js/vendor/chart.js',
           'js/main.js'
         ],
         dest: 'dist/js/scripts.min.js'

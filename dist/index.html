@@ -32,27 +32,29 @@
         <div class="container">         
 
             <section class="row row-1">
-                <div class="half">
+                <div class="half distance">
                     <p class="label">Distance</p>
-                    <p class="value">4.55</p>
+                    <p class="value" id="distance-value">0</p>
                 </div>
 
-                <div class="half">
+                <div class="half time">
                     <p class="label">Minutes</p>
-                    <p class="value">20:17</p>
+                    <p class="value" id="time-value">0</p>
                 </div>
                 
             </section>
 
             <section class="row row-2">
-                <div class="half">
+                <div class="half speed">
                     <p class="label">Miles/Hour</p>
-                    <p class="value">13.42</p>
+                    <p class="value" id="speed-value">13.42</p>
+                    <canvas id="speed-chart" height="300"></canvas>
                 </div>
 
-                <div class="half">
+                <div class="half elevation">
                     <p class="label">Elevation/Ft</p>
-                    <p class="value">325</p>
+                    <p class="value" id="elevation-value">325</p>
+                    <canvas id="elevation-chart" height="300"></canvas>
                 </div>
                 
             </section>           

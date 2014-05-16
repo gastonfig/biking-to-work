@@ -44,6 +44,7 @@ $susy: (
 }
 
 .half {
+	position: relative;
 	@include span(6 wide of 12);
 
 	&:first-child {
@@ -117,7 +118,7 @@ h1 {
 	text-transform: uppercase;
 
 	@extend %primaryFont;
-	@include type-size(1.6);
+	@include type-size(1.5);
 	@include px-to-rem(margin-top, 2.1);
 }
 
@@ -134,6 +135,15 @@ h1 {
 	@include px-to-rem(margin-bottom, 9.6);
 	@include px-to-rem(margin-top, 7);
 }
+
+canvas {
+	width: 100%!important;
+	position: absolute;
+	bottom: -22px;
+	left: 0;
+	z-index: -1;
+}
+
 
 /* FOOTER
 ----------------------------------------------- */
