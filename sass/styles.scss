@@ -16,31 +16,13 @@ a {
 /* LAYOUT
 ----------------------------------------------- */
 body {
-	background: $bgColor;
+	background: $bgColor url('/images/map-bg.jpg') no-repeat right 0;
 	color: $textColor;
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
 	font-feature-settings: "kern" 1;
-
-	background: $bgColor url('/images/map-bg.jpg') no-repeat right 0;
 }
 
-// $susy: (
-//   columns: 12,
-//   column-width: 70px,
-//   container: auto,
-//   gutters: 1/1.5,
-//   math: fluid,
-//   output: float,
-//   gutter-position: inside,
-//   debug: (
-//     image: show-columns,
-//     color: rgba(#000, .25),
-//     output: overlay,
-//     toggle: top right,
-//   ),
-// );
-// 
 $susy: (
   columns: 12,
   column-width: 51px,
@@ -63,22 +45,15 @@ $susy: (
 }
 
 .half {
-	// border-bottom: 1px solid $lineColor;
-	// border-right: 1px solid $lineColor;
 	position: relative;
 	@include span(4 of 8);
 	
-	&:first-child {
-		// border-left: 1px solid $lineColor;		
+	&:first-child {	
 	}
 }
 
 .third {
 	@include span(4);
-
-	// &:nth-child(3) {
-	// 	margin-right: 0;
-	// }
 }
 
 .two-thirds {
@@ -90,24 +65,20 @@ $susy: (
 	@include px-to-rem(margin-bottom, 6.9);
 }
 
-
 .last {
 	@include last;
 }
-
 
 /* HERO
 ----------------------------------------------- */
 .head {	
 	display: block;
 	width: 100%;
+
+	@include px-to-rem(padding-bottom, 11.7);
 }
 
-header {
-	h1 {
-		display: inline-block;
-	}
-	
+header {	
 	p {
 		margin: 0;
 
@@ -125,13 +96,13 @@ header {
 
 h1 {
 	color: $accentColor;
+	display: inline-block;
 	font-weight: 900;
 	text-transform: uppercase;
 
 	@extend %primaryFont;
 	@include type-size(9, 7.1);
-	@include px-to-rem(padding-top, 6);
-	// @include px-to-rem(padding-top, 3);
+	@include px-to-rem(padding-top, 4);
 }
 
 /* STATS
@@ -208,7 +179,6 @@ canvas {
 	position: absolute;
 	top: 60px;
 }
-
 
 /* FOOTER
 ----------------------------------------------- */
