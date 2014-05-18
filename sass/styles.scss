@@ -84,6 +84,7 @@ $susy: (
 }
 
 .stat-item {
+	position: relative;
 	@include px-to-rem(margin-bottom, 6.9);
 }
 
@@ -198,6 +199,13 @@ canvas {
 	ol {
 		margin: 0;
 	}
+}
+
+.cross-streets-map {
+	max-width: 29%;
+	right: 0;
+	position: absolute;
+	top: 60px;
 }
 
 
