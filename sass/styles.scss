@@ -23,20 +23,37 @@ body {
 	font-feature-settings: "kern" 1;
 }
 
+// $susy: (
+//   columns: 12,
+//   column-width: 70px,
+//   container: auto,
+//   gutters: 1/1.5,
+//   math: fluid,
+//   output: float,
+//   gutter-position: inside,
+//   debug: (
+//     image: show-columns,
+//     color: rgba(#000, .25),
+//     output: overlay,
+//     toggle: top right,
+//   ),
+// );
+// 
 $susy: (
   columns: 12,
-  column-width: 70px,
-  container: auto,
-  gutters: 1/4,
-  math: fluid,
+  column-width: 51px,
+  // container: 888px,
+  gutters: 40px/51px,
+  math: fixed,
   output: float,
-  gutter-position: inside,
-  debug: (
-    image: show-columns,
-    color: rgba(#000, .25),
-    output: overlay,
-    toggle: top right,
-  ),
+  gutter-position: after,
+  global-box-sizing: border-box,
+  // debug: (
+  //   image: show-columns,
+  //   color: rgba(#000, .25),
+  //   output: overlay,
+  //   toggle: top right,
+  // )
 );
 
 .container {
@@ -47,7 +64,7 @@ $susy: (
 	// border-bottom: 1px solid $lineColor;
 	// border-right: 1px solid $lineColor;
 	position: relative;
-	@include span(6 wide of 12);
+	@include span(4 of 8);
 	
 	&:first-child {
 		// border-left: 1px solid $lineColor;		
@@ -55,23 +72,26 @@ $susy: (
 }
 
 .third {
-	@include span(4 wide of 12); 
+	@include span(4);
 
-	&:first-child, &:nth-child(2) {
-		// border-right: 1px solid $lineColor;
-	}
+	// &:nth-child(3) {
+	// 	margin-right: 0;
+	// }
+}
+
+.two-thirds {
+	@include span(8 of 12);
+}
+
+.stat-item {
+	@include px-to-rem(margin-bottom, 6.9);
 }
 
 
-section {
-	// text-align: center;
+.last {
+	@include last;
 }
 
-
-.row {
-	// border-top: 1px solid $lineColor;
-	@include span(12 wide of 12 last);
-}
 
 /* HERO
 ----------------------------------------------- */
@@ -87,7 +107,6 @@ header {
 	}
 	
 	p {
-		// color: #353e42;
 		margin: 0;
 
 		@extend %serifFont;
@@ -96,8 +115,9 @@ header {
 }
 
 .lead {
-	@include column-count(2);
-	@include span(9 wide of 12);
+	@include columns(2);
+	@include column-gap(30px);
+	@include span(9 of 12);
 	@include px-to-rem(margin-bottom, 9);
 }
 
@@ -122,7 +142,7 @@ h1 {
 	text-transform: uppercase;
 
 	@extend %primaryFont;
-	@include type-size(1.8);
+	@include type-size(1.8);	
 	@include px-to-rem(padding-bottom, 1);
 
 	span {
@@ -143,16 +163,18 @@ h1 {
 
 .value {
 	color: $accentColor2;
-	// font-weight: 700;
-	font-style: italic;
-	letter-spacing: -.03em;
-	text-align: center;
+	font-weight: 700;
+	letter-spacing: -.05em;
+	margin-bottom: 0;
+	margin-top: 0;
 
-	// @extend %secondaryFont;
-	@extend %serifFont;
-	@include type-size(12.8);
-	@include px-to-rem(margin-bottom, 9.6);
-	@include px-to-rem(margin-top, 7);
+	@extend %secondaryFont;
+	@include type-size(12);
+
+	span {
+		letter-spacing: -.01em;
+		@include type-size(3.6);
+	}
 }
 
 canvas {
@@ -161,6 +183,21 @@ canvas {
 	bottom: -22px;
 	left: 0;
 	z-index: -1;
+}
+
+.streets {
+	font-style: italic;
+
+	@extend %serifFont;
+	@include type-size(1.2, 1.9);
+}
+
+.cross-streets {
+	@include px-to-rem(margin-bottom, 3.9);
+
+	ol {
+		margin: 0;
+	}
 }
 
 

@@ -32,36 +32,57 @@
 
         <div class="container">         
 
-            <section class="row distance">
-                <div class="third distance">
+            <section class="col two-thirds">
+                <div class="stat-item half distance">
                     <p class="label"><span>Distance</span></p>
-                    <p class="value" id="distance-value">4.21<span>mi</span></p>
+                    <p class="value" id="distance-value">4.21<span> mi</span></p>
                 </div>
 
-                <div class="third time">
+                <div class="stat-item half time last">
                     <p class="label"><span>Time</span></p>
-                    <p class="value" id="time-value">15:38<span>min</span></p>
+                    <p class="value" id="time-value">15:38<span> min</span></p>
                 </div>
 
-                <div class="third revolutions">
-                    <p class="label"><span>Revolutions</span></p>
-                    <p class="value" id="time-value">1,1182<span>.56</span></p>
-                </div>                
-            </section>
-
-            <section class="row row-2">
-                <div class="half speed">
-                    <p class="label">Miles/Hour</p>
+                <div class="stat-item speed">
+                    <p class="label"><span>Miles/Hour</span></p>
                     <p class="value" id="speed-value">13.42</p>
                     <canvas id="speed-chart" height="300"></canvas>
                 </div>
 
-                <div class="half elevation">
-                    <p class="label">Elevation/Ft</p>
+                <div class="stat-item elevation">
+                    <p class="label"><span>Elevation</span></p>
                     <p class="value" id="elevation-value">325</p>
                     <canvas id="elevation-chart" height="300"></canvas>
                 </div>
-                
+
+            </section>
+
+            <section class="col third last">
+                <div class="stat-item cross-streets">
+                    <p class="label"><span>Cross Streets</span></p>
+                    <p class="value" id="time-value">14</p>
+                    <ol class="streets">
+                        <li>SE Marion St</li>
+                        <li>SE Harney St</li>
+                        <li>SE Umatilla St</li>
+                        <li>SE Tacoma St</li>
+                        <li>SE Spokane St</li>
+                        <li>SE Ivon St</li>
+                        <li>SE Division Pl</li>
+                        <li>SE Caruthers St</li>
+                        <li>SE Market St</li>
+                        <li>SE Clay St</li>
+                        <li>SE Hawthorne Blvd</li>
+                        <li>SE Madison St</li>
+                        <li>SE Salmon St</li>
+                        <li>SE Taylor St</li>
+                    </ol>
+                </div>                
+
+                <div class="stat-item revolutions">
+                    <p class="label"><span>Revolutions</span></p>
+                    <p class="value" id="time-value">1,1182<span> .56</span></p>
+                </div>              
             </section>           
         </div>
 
