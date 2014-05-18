@@ -101,6 +101,12 @@ module.exports = function(grunt) {
         }
       }      
     },
+    'gh-pages': {
+    	options: {
+    		base: 'dist'
+    	},
+    	src: ['**']
+    }
   });
 
   require('load-grunt-tasks')(grunt);

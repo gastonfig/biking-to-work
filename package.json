@@ -14,6 +14,7 @@
     "grunt-contrib-compass": "~0.6.0",
     "grunt-contrib-imagemin": "~0.4.0",
     "load-grunt-tasks": "~0.4.0",
-    "request": "~2.34.0"
+    "request": "~2.34.0",
+    "grunt-gh-pages": "~0.9.1"
   }
 }
