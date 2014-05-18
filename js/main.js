@@ -28,8 +28,8 @@ $(document).ready(function(){
 	  labels : [" "," "," "," "," "],
 		datasets : [
 			{
-				fillColor : "#243742",
-				strokeColor : "#273d47",
+				fillColor : "#e1e3de",
+				strokeColor : "#e1e3de",
 				data : [-35,28,-7,-13,-20]
 			}
 	     
@@ -40,8 +40,8 @@ $(document).ready(function(){
 	  labels : [" "," "," "," "," "],
 		datasets : [
 			{
-				fillColor : "#243742",
-				strokeColor : "#273d47",
+				fillColor : "#e1e3de",
+				strokeColor : "#e1e3de",
 				data : [17.19,18.16,16.83,18.29,16.93]
 			}	     
 		]
@@ -57,12 +57,13 @@ $(document).ready(function(){
 	  scaleLineColor : 'transparent',
 	  datasetStrokeWidth : 0,
 	  pointDotRadius : 0,
-	  scaleGridLineColor : 'transparent'
+	  scaleGridLineColor : 'transparent',
+	  bezierCurve : false
 	};
 
 	var elevationChart = $("#elevation-chart").get(0).getContext("2d");
-	// new Chart(elevationChart).Line(elevationData, options);
+	new Chart(elevationChart).Line(elevationData, options);
 
 	var speedChart = $("#speed-chart").get(0).getContext("2d");
-	// new Chart(speedChart).Line(speedData, options);
+	new Chart(speedChart).Line(speedData, options);
 });

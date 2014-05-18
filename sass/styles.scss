@@ -17,6 +17,8 @@ a {
 ----------------------------------------------- */
 body {
 	background: $bgColor url('/images/map-bg.jpg') no-repeat right 0;
+	// background: $bgColor url('/images/map-bg.svg') no-repeat right 0;
+	// background: $bgColor;
 	color: $textColor;
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
@@ -71,7 +73,9 @@ $susy: (
 
 /* HERO
 ----------------------------------------------- */
-.head {	
+.head {
+	// background: $bgColor url('/images/map-bg.svg') no-repeat -20% 0;
+	background-size: 100%;
 	display: block;
 	width: 100%;
 
@@ -136,6 +140,7 @@ h1 {
 
 .value {
 	color: $accentColor2;
+	display: inline-block;
 	font-weight: 700;
 	letter-spacing: -.05em;
 	margin-bottom: 0;
@@ -151,11 +156,9 @@ h1 {
 }
 
 canvas {
-	width: 518px!important;
-	position: absolute;
-	bottom: -22px;
-	left: 0;
-	z-index: -1;
+	float: right;
+	margin-top: 23px;
+	width: 460px!important;
 }
 
 .streets {
