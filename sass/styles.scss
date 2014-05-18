@@ -21,6 +21,8 @@ body {
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
 	font-feature-settings: "kern" 1;
+
+	background: $bgColor url('/images/map-bg.jpg') no-repeat right 0;
 }
 
 // $susy: (
@@ -96,8 +98,7 @@ $susy: (
 
 /* HERO
 ----------------------------------------------- */
-.head {
-	background: url('/images/map-bg.png') no-repeat right 0;
+.head {	
 	display: block;
 	width: 100%;
 }
