@@ -16,9 +16,7 @@ a {
 /* LAYOUT
 ----------------------------------------------- */
 body {
-	background: $bgColor url('/images/map-bg.jpg') no-repeat right 0;
-	// background: $bgColor url('/images/map-bg.svg') no-repeat right 0;
-	// background: $bgColor;
+	background: $bgColor url('../images/map-bg.jpg') no-repeat right 0;
 	color: $textColor;
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
