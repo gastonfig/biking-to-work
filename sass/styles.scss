@@ -92,9 +92,9 @@ header {
 }
 
 .lead {
-	@include columns(2);
-	@include column-gap(30px);
-	@include span(9 of 12);
+	// @include columns(2);
+	// @include column-gap(30px);
+	@include span(4.5 of 12);
 	@include px-to-rem(margin-bottom, 6);
 }
 
