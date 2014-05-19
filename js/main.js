@@ -30,7 +30,7 @@ $(document).ready(function(){
 			{
 				fillColor : "#e1e3de",
 				strokeColor : "#e1e3de",
-				data : [-35,28,-7,-13,-20]
+				data : [-39,30,-27,9,-22]
 			}
 	     
 		]
@@ -42,7 +42,7 @@ $(document).ready(function(){
 			{
 				fillColor : "#e1e3de",
 				strokeColor : "#e1e3de",
-				data : [17.19,18.16,16.83,18.29,16.93]
+				data : [16.54,20.95,19.30,20.72,10.97]
 			}	     
 		]
 	}
