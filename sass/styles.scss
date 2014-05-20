@@ -203,17 +203,18 @@ h1 {
 	span {
 		position: relative;
 		@include px-to-rem(padding-bottom, 1);
-	}
 
-	span:after {
-		background: $accentColor;
-		bottom: 0px;
-		content: '';
-		height: 4px;
-		left: 0;
-		position: absolute;		
-		width: 100%;
+		&:after {
+			background: $accentColor;
+			bottom: 0px;
+			content: '';
+			height: 4px;
+			left: 0;
+			position: absolute;		
+			width: 100%;
+		}
 	}
+	
 
 	@include breakpoint(phone-big) {
 		@include px-to-rem(margin-bottom, 2.4);		
@@ -231,7 +232,7 @@ h1 {
 	@extend %secondaryFont;
 	@include type-size(12);
 
-	span {
+	.unit {
 		letter-spacing: -.01em;
 		@include type-size(3.6);
 	}
