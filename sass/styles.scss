@@ -310,10 +310,6 @@ footer {
 	display: inline-block;
 	width: 100%;
 
-	.container {
-		// border-top: 1
-	}
-
 	@extend %primaryFont;
 
 	p {
@@ -325,5 +321,9 @@ footer {
 
 	a {
 		color: $accentColor2;
+
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 }
