@@ -12,6 +12,8 @@ $primaryFont: "proxima-nova";
 
 %primaryFont {
 	font-family: $primaryFont, helvetica, arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
 }
 
 
@@ -29,6 +31,8 @@ $secondaryFont: "din-condensed-web";
 
 %secondaryFont {
 	font-family: $secondaryFont, helvetica, arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
 }
 
 /**

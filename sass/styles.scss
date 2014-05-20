@@ -9,7 +9,14 @@
 /* TYPOGRAPHY
 ----------------------------------------------- */
 a {
+	color: $textColor;
 	text-decoration: none;
+
+	@extend %basic-animation;
+
+	&:hover {
+		color: $accentColor;		
+	}
 }
 
 
@@ -17,9 +24,7 @@ a {
 ----------------------------------------------- */
 body {
 	background: $bgColor url('../images/map-bg.jpg') no-repeat right 0;
-	color: $textColor;
-	-webkit-font-smoothing: antialiased;
-	text-rendering: optimizeLegibility;
+	color: $textColor;	
 	font-feature-settings: "kern" 1;
 
 	@include breakpoint(tablet-portrait) {
@@ -128,6 +133,11 @@ $susy: (
 		@extend %serifFont;
 		@include type-size(1.4, 2.2);
 		@include px-to-rem(margin-bottom, 1.4);		
+	}
+
+	a {
+		border-bottom: 1px solid;
+		padding-bottom: 2px;
 	}
 
 	@include breakpoint(desktop) {
